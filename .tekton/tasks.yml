@@ -1,3 +1,4 @@
+---
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
@@ -7,7 +8,7 @@ spec:
   workspaces:
     - name: source
   steps:
-    - name: remove
+    - name: removes
       image: alpine:3
       env:
         - name: WORKSPACE_SOURCE_PATH
